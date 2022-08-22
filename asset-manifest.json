@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sync-github-repos/static/css/main.89da9388.css",
-    "main.js": "/sync-github-repos/static/js/main.0aac0d12.js",
+    "main.js": "/sync-github-repos/static/js/main.22407efb.js",
     "static/media/noto-sans-all-400-normal.woff": "/sync-github-repos/static/media/noto-sans-all-400-normal.52416d7072271c0422c4.woff",
     "static/media/noto-sans-mono-all-400-normal.woff": "/sync-github-repos/static/media/noto-sans-mono-all-400-normal.547c956a4c7a05afcd39.woff",
     "static/media/noto-sans-devanagari-400-normal.woff2": "/sync-github-repos/static/media/noto-sans-devanagari-400-normal.b7662f94b361e5dfba07.woff2",
@@ -21,10 +21,10 @@
     "static/media/noto-sans-mono-vietnamese-400-normal.woff2": "/sync-github-repos/static/media/noto-sans-mono-vietnamese-400-normal.a2104a184f2aa53bee8e.woff2",
     "index.html": "/sync-github-repos/index.html",
     "main.89da9388.css.map": "/sync-github-repos/static/css/main.89da9388.css.map",
-    "main.0aac0d12.js.map": "/sync-github-repos/static/js/main.0aac0d12.js.map"
+    "main.22407efb.js.map": "/sync-github-repos/static/js/main.22407efb.js.map"
   },
   "entrypoints": [
     "static/css/main.89da9388.css",
-    "static/js/main.0aac0d12.js"
+    "static/js/main.22407efb.js"
   ]
 }
