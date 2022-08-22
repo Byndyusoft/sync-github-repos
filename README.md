@@ -1,28 +1,14 @@
-# ᐸRepository nameᐳ
+# sync-github-repos
 
-[![npm@latest](https://img.shields.io/npm/v/@byndyusoft/typescript-template/latest.svg)](https://www.npmjs.com/package/@byndyusoft/typescript-template)
-[![test](https://github.com/Byndyusoft/node-typescript-template/actions/workflows/test.yaml/badge.svg?branch=master)](https://github.com/Byndyusoft/node-typescript-template/actions/workflows/test.yaml)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-ᐸRepository descriptionᐳ
+Single-page application for sync GitHub repositories
 
-## Requirements
+## Features
 
-- Node.js v14 LTS or later
-- Yarn
-
-## Install
-
-```bash
-yarn add ᐸPackage nameᐳ
-```
-
-## Usage
-
-```typescript
-// Usage example
-```
+- Workspaces (manage multiple groups of your repositories)
+- Auth via [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+- Sync [tag protection rules](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/configuring-tag-protection-rules)
 
 ## Maintainers
 

@@ -1,10 +1,25 @@
 name: deploy
 
 on:
-  - workflow_dispatch
+  workflow_run:
+    workflows:
+      - test
+    types:
+      - completed
 
 jobs:
   deploy:
-    uses: Byndyusoft/node-reusable-workflows/.github/workflows/deploy.yaml@master
-    secrets:
-      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
+    steps:
+      - uses: Byndyusoft/node-reusable-workflows/.github/actions/install@master
+        with:
+          node-version: "lts/*"
+
+      - run: yarn run build
+
+      - uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist

@@ -1,0 +1,22 @@
+@import "~normalize.css";
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+@import "~@blueprintjs/popover2/lib/css/blueprint-popover2.css";
+@import "~@fontsource/noto-sans";
+@import "~@fontsource/noto-sans-mono";
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+@supports (-moz-appearance: none) {
+  body {
+    line-height: normal;
+  }
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: "Noto Sans Mono", monospace;
+}

@@ -1,3 +1,4 @@
-"*.{ts,js}": eslint
+"*.{ts,tsx,js,jsx}": eslint
+"*.scss": stylelint
 "*.md": markdownlint
-"*.{ts,js,json,yaml,yml,md}": prettier
+"*.{ts,tsx,js,jsx,json,yaml,yml,md,html,scss}": prettier

@@ -1,103 +1,88 @@
 {
-  "name": "@byndyusoft/typescript-template",
+  "name": "sync-github-repos",
   "version": "0.0.0-development",
-  "description": "Base template for TypeScript packages",
-  "homepage": "https://github.com/Byndyusoft/node-typescript-template#readme",
+  "private": true,
+  "description": "Single-page application for sync GitHub repositories",
+  "homepage": "https://byndyusoft.github.io/sync-github-repos",
   "bugs": {
-    "url": "https://github.com/Byndyusoft/node-typescript-template/issues"
+    "url": "https://github.com/Byndyusoft/sync-github-repos/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Byndyusoft/node-typescript-template.git"
+    "url": "https://github.com/Byndyusoft/sync-github-repos.git"
   },
   "license": "Apache-2.0",
   "author": "Byndyusoft",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist",
-    "src",
-    "!dist/*.tsbuildinfo",
-    "!**/__tests__",
-    "!**/*spec.ts"
-  ],
   "scripts": {
-    "prebuild": "shx rm -rf ./dist",
-    "build": "yarn run prebuild && yarn run build:src",
-    "build:src": "tsc --project ./tsconfig.build.json",
+    "_test:cov": "react-scripts test --coverage",
+    "build": "react-scripts build",
     "postinstall": "husky install",
-    "lint": "yarn run lint:eslint && yarn run lint:markdown && yarn run lint:prettier",
-    "lint:eslint": "eslint --ignore-path ./.gitignore --max-warnings 0 --ext .ts,.js .",
-    "lint:eslint:fix": "eslint --ignore-path ./.gitignore --fix --ext .ts,.js .",
-    "lint:fix": "yarn run lint:eslint:fix && yarn run lint:markdown:fix && yarn run lint:prettier:fix",
+    "lint": "yarn run lint:eslint && yarn run lint:stylelint && yarn run lint:markdown && yarn run lint:prettier",
+    "lint:eslint": "eslint --ignore-path ./.gitignore --max-warnings 0 --ext .ts,.tsx,.js,.jsx .",
+    "lint:eslint:fix": "eslint --ignore-path ./.gitignore --fix --ext .ts,.tsx,.js,.jsx .",
+    "lint:fix": "yarn run lint:eslint:fix && yarn run lint:stylelint:fix && yarn run lint:markdown:fix && yarn run lint:prettier:fix",
     "lint:markdown": "markdownlint --ignore-path ./.gitignore \"./**/*.md\"",
     "lint:markdown:fix": "markdownlint --ignore-path ./.gitignore --fix \"./**/*.md\"",
-    "lint:prettier": "prettier --ignore-path ./.gitignore --check \"./**/*.{ts,js,json,yaml,yml,md}\"",
-    "lint:prettier:fix": "prettier --ignore-path ./.gitignore --write \"./**/*.{ts,js,json,yaml,yml,md}\"",
-    "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable",
-    "test": "jest",
-    "test:cov": "jest --coverage"
+    "lint:prettier": "prettier --ignore-path ./.gitignore --check \"./**/*.{ts,tsx,js,jsx,json,yaml,yml,md,html,scss}\"",
+    "lint:prettier:fix": "prettier --ignore-path ./.gitignore --write \"./**/*.{ts,tsx,js,jsx,json,yaml,yml,md,html,scss}\"",
+    "lint:stylelint": "stylelint --ignore-path ./.gitignore \"**/*.scss\"",
+    "lint:stylelint:fix": "stylelint --ignore-path ./.gitignore --fix \"**/*.scss\"",
+    "start": "react-scripts start",
+    "test": "react-scripts test"
   },
-  "jest": {
-    "collectCoverageFrom": [
-      "./src/**/*.ts",
-      "!**/__tests__/**/*.ts",
-      "!**/index.ts"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
     ],
-    "coverageDirectory": "<rootDir>/coverage",
-    "coverageReporters": [
-      "lcov",
-      "text"
-    ],
-    "moduleFileExtensions": [
-      "ts",
-      "js"
-    ],
-    "resetMocks": true,
-    "rootDir": "./",
-    "roots": [
-      "<rootDir>/src",
-      "<rootDir>/test"
-    ],
-    "setupFilesAfterEnv": [
-      "jest-extended/all"
-    ],
-    "testEnvironment": "node",
-    "testRegex": ".*\\.spec\\.ts$",
-    "transform": {
-      "^.+\\.ts$": "ts-jest"
-    }
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "dependencies": {
-    "tslib": "^2.4.0"
+    "@blueprintjs/core": "4.8.0",
+    "@blueprintjs/popover2": "1.5.1",
+    "@fontsource/noto-sans": "4.5.11",
+    "@fontsource/noto-sans-mono": "4.5.10",
+    "@fvilers/disable-react-devtools": "1.3.0",
+    "@octokit/rest": "19.0.4",
+    "@tanstack/react-query": "4.2.1",
+    "@tanstack/react-query-devtools": "4.2.1",
+    "classnames": "2.3.1",
+    "i18next": "21.9.1",
+    "immer": "9.0.15",
+    "nanoid": "4.0.0",
+    "normalize.css": "8.0.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-error-boundary": "3.1.4",
+    "react-i18next": "11.18.4",
+    "react-router-dom": "6.3.0",
+    "use-local-storage-state": "18.1.1"
   },
   "devDependencies": {
     "@byndyusoft/eslint-config": "2.0.0",
-    "@byndyusoft/tsconfig": "1.1.0",
+    "@byndyusoft/stylelint-config": "0.3.0",
     "@commitlint/cli": "17.0.3",
     "@commitlint/config-conventional": "17.0.3",
-    "@types/jest": "28.1.6",
-    "@types/node": "14.18.22",
-    "eslint": "8.20.0",
+    "@tsconfig/create-react-app": "1.0.2",
+    "@types/jest": "28.1.7",
+    "@types/node": "16.11.52",
+    "@types/react": "18.0.17",
+    "@types/react-dom": "18.0.6",
+    "eslint": "8.22.0",
     "husky": "8.0.1",
-    "jest": "28.1.3",
-    "jest-extended": "3.0.1",
     "lint-staged": "13.0.3",
-    "markdownlint-cli": "0.32.1",
-    "pinst": "3.0.0",
+    "markdownlint-cli": "0.32.2",
     "prettier": "2.7.1",
     "prettier-plugin-packagejson": "2.2.18",
-    "semantic-release": "19.0.3",
-    "shx": "0.3.4",
-    "ts-jest": "28.0.7",
+    "react-scripts": "5.0.1",
+    "sass": "1.54.5",
+    "stylelint": "13.13.1",
     "typescript": "4.7.4"
   },
-  "packageManager": "yarn@4.0.0-rc.14",
-  "engines": {
-    "node": ">=14"
-  },
-  "publishConfig": {
-    "access": "public"
-  }
+  "packageManager": "yarn@4.0.0-rc.14"
 }

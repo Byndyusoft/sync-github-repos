@@ -1,0 +1,52 @@
+{
+  "auth": {
+    "applicationIsUnderActiveDevelopment": "Application is under active development, may contain bugs and breaking changes!",
+    "gitHubPersonalAccessTokenHelp": "Generate it <2>here</2> with <5>repo</5> scope",
+    "gitHubPersonalAccessTokenLabel": "GitHub Personal Access Token",
+    "gitHubPersonalAccessTokenLabelPlaceholder": "Paste your token..."
+  },
+  "common": {
+    "save": "Save"
+  },
+  "fallbackComponent": {
+    "reloadPage": "Reload page",
+    "title": "Error"
+  },
+  "layout": {
+    "auth": "Auth",
+    "repositories": "Repositories",
+    "tags": "Tags"
+  },
+  "notFound": {
+    "description": "Not Found",
+    "goHome": "Go Home"
+  },
+  "repositories": {
+    "baseRepositoryLabel": "Base repository",
+    "confirmDeleteRepository": "Are you sure to stop manage this repository?",
+    "repositoriesLabel": "Repositories",
+    "repositoryPlaceholder": "Owner/Repo"
+  },
+  "tags": {
+    "addMissing": "Add missing",
+    "base": "Base",
+    "confirmAddMissing": "Are you sure to add all missing rules?",
+    "confirmRemoveExtraneous": "Are you sure to remove all extraneous rules?",
+    "extraneous": "Extraneous",
+    "nothingToAdd": "Nothing to add!",
+    "nothingToRemove": "Nothing to remove!",
+    "removeExtraneous": "Remove extraneous"
+  },
+  "workspaces": {
+    "addNew": "Add new",
+    "addNewWorkspace": "Add new workspace",
+    "confirmDeleteWorkspace": "Are you sure to delete workspace {{workspace.name}}?",
+    "defaultWorkspaceName": "Default",
+    "delete": "Delete",
+    "edit": "Edit",
+    "editWorkspace": "Edit {{workspace.name}} workspace",
+    "select": "Select",
+    "title": "Workspaces",
+    "workspaceNamePlaceholder": "Workspace name..."
+  }
+}

@@ -1,0 +1,19 @@
+@import "~@blueprintjs/core/lib/scss/variables";
+
+.layoutContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContainer {
+  flex: 1;
+  margin: $pt-grid-size;
+}
+
+.footerContainer {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: calc($pt-grid-size / 3);
+}

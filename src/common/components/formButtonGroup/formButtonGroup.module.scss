@@ -1,0 +1,7 @@
+@import "~@blueprintjs/core/lib/scss/variables";
+
+.formButtonGroupContainer {
+  :global(.#{$bp-ns}-button):not(:first-child) {
+    margin-left: calc($pt-grid-size / 2);
+  }
+}

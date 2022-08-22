@@ -1,9 +1,8 @@
 {
-  "extends": "@byndyusoft/tsconfig/tsconfig.node14.json",
+  "extends": "@tsconfig/create-react-app/tsconfig.json",
   "compilerOptions": {
-    // Emit
-    "outDir": "./dist"
+    // Language and Environment
+    "target": "es2015"
   },
-  "exclude": ["./dist", "./node_modules"],
-  "include": ["./**/*.ts"]
+  "include": ["src"]
 }
