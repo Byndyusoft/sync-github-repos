@@ -12389,9 +12389,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-i18next@npm:11.18.4":
-  version: 11.18.4
-  resolution: "react-i18next@npm:11.18.4"
+"react-i18next@npm:12.0.0":
+  version: 12.0.0
+  resolution: "react-i18next@npm:12.0.0"
   dependencies:
     "@babel/runtime": "npm:^7.14.5"
     html-parse-stringify: "npm:^3.0.1"
@@ -12403,7 +12403,7 @@ __metadata:
       optional: true
     react-native:
       optional: true
-  checksum: 284b077d453afedba31dc800605edeb93b09e665fb4a4be64f9a945165b343125f524eaee4b676f520d97ecdce372c4929208f74285af7acf8890746ef0f252c
+  checksum: 1a33bff70a903b8278bf64f8a9c41268084e4c2f7fa538e80d9a3de7b57c313f28080f5f2546416a525ea28902efe84390c362b8008c606f327a54188d6cba59
   languageName: node
   linkType: hard
 
@@ -14173,7 +14173,7 @@ __metadata:
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     react-error-boundary: "npm:3.1.4"
-    react-i18next: "npm:11.18.4"
+    react-i18next: "npm:12.0.0"
     react-router-dom: "npm:6.3.0"
     react-scripts: "npm:5.0.1"
     sass: "npm:1.54.5"
