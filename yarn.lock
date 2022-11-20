@@ -8135,12 +8135,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next@npm:21.9.1":
-  version: 21.9.1
-  resolution: "i18next@npm:21.9.1"
+"i18next@npm:22.0.6":
+  version: 22.0.6
+  resolution: "i18next@npm:22.0.6"
   dependencies:
     "@babel/runtime": "npm:^7.17.2"
-  checksum: 6a153bb8eb5d624e65cfd9113a952375cd8c5d39c87a9bbf52b79729d7cc5a884be500ccd179869dc4d406ae98e12999ffadb6314ecc045d61950cd5a91f5fce
+  checksum: 3634e3c5388b02a308b4eb05a1c72c63b4a8bb94cbcdc5e8bc405c288512afcb46c8f24fb64c8630eb683ee70edaae804648ff828241ff77b6810c3e2b30c335
   languageName: node
   linkType: hard
 
@@ -14162,7 +14162,7 @@ __metadata:
     classnames: "npm:2.3.1"
     eslint: "npm:8.22.0"
     husky: "npm:8.0.1"
-    i18next: "npm:21.9.1"
+    i18next: "npm:22.0.6"
     immer: "npm:9.0.15"
     lint-staged: "npm:13.0.3"
     markdownlint-cli: "npm:0.32.2"
